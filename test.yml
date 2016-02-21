@@ -1,0 +1,8 @@
+---
+- hosts: 172.26.165.53
+  remote_user: evo
+  tasks:
+  - name: test connection
+    ping:
+  - name: copy boh file
+    copy: src=/home/mircea/Documenti/boh.txt dest=/ltm/home/evo/test2/
